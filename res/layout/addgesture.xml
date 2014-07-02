@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/layout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f8ff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Draw a new Gesture"
+        android:textColor="#2186AD"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/button5"
+         android:layout_width="wrap_content"
+         android:layout_marginTop="12dp"
+         android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="App to start..."
+            android:textSize="23dp" />
+
+       <android.gesture.GestureOverlayView
+        android:id="@+id/gestures_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:fadeDuration="2000000000"
+        android:gestureStrokeType="multiple"
+        android:gestureColor="#3F48CC"
+        android:background="@drawable/gesturebackground"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <!--<com.google.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="a150073fdb6258b"
+        ads:testDevices="TEST_EMULATOR, 304D1964DA59978E" 
+        ads:loadAdOnCreate="true" />-->
+
+</LinearLayout>

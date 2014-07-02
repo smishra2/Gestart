@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f8ff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/infobutton" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Gestart"
+        android:layout_marginTop="-28dp"
+        android:textColor="#2186AD"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_weight="0.93"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:color="#ffffff"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" > 
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="160dp"
+            android:layout_marginLeft="0dp"
+            android:layout_height="wrap_content"
+            android:text="Add Gesture"
+            android:textSize="23dp" />
+
+        <Button
+            android:id="@+id/settingsbutton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <!-- <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="a150073fdb6258b"
+        ads:testDevices="TEST_EMULATOR, 304D1964DA59978E" 
+        ads:loadAdOnCreate="true" />-->
+
+</LinearLayout>

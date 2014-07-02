@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="#ffffff">
+ 
+    <ImageView
+        android:id="@+id/gestureimage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:src="@drawable/icon" 
+        android:background="@drawable/gesturebackground">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/gesturelabel"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginLeft="20dp"
+            android:text="@+id/label"
+            android:textSize="20dp" 
+            android:textColor="#2186AD"/>
+         
+
+    </LinearLayout>
+ 
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+       <android.gesture.GestureOverlayView
+        android:id="@+id/gestures_sensor"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:fadeOffset="700"
+        android:gestureStrokeType="multiple" 
+        android:gestureColor="#3F48CC"
+        android:uncertainGestureColor="#3F48CC"
+        android:background="@drawable/gesturebackground"/>
+		<!--android:background="#ededed"
+		android:gestureColor="#2186AD"-->
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="255dp"
+            android:layout_height="match_parent" 
+            android:background="#ffffff">
+            
+                <LinearLayout
+       				 android:id="@+id/linearLayout4"
+       				 android:layout_width="match_parent"
+       				 android:orientation="horizontal" 
+        			 android:layout_height="match_parent">
+
+                    
+        		</LinearLayout>
+
+        </HorizontalScrollView>
+        
+        <TextView
+            android:id="@+id/morebutton"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text=" Menu" 
+            android:background="#E0E0E0"
+            android:textColor="#3F48CC"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+        <!--<ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:src="@drawable/more" />-->
+        
+    </LinearLayout>
+    
+    <!--<com.google.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="a150073fdb6258b"
+        ads:testDevices="TEST_EMULATOR, 304D1964DA59978E" 
+        ads:loadAdOnCreate="true" />-->
+    
+
+</LinearLayout>
