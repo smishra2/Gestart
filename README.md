@@ -11,3 +11,5 @@ I built this app in the Summer of 2012. It was a novice effort. Currently I am i
 - Follow better design principles, including reusable OO design
 - Improve UI and overall app experience
 - Incorporate outside Android libraries for both UX as well as backend functionality
+
+In the near future, I would like to do an overhaul of the app, redesigning it into a full home-screen launcher replacement.
